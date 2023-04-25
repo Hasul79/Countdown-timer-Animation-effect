@@ -1,0 +1,30 @@
+body{
+    background: rgb(201, 227, 240);
+    padding: 50px 20px;
+    font-family: 'Poppins' , sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+.animation {
+    font-size: 100px;
+    overflow: hidden;
+}
+.animation-frames{
+    animation: frame-animation 5000ms infinite;
+
+    animation-timing-function: steps(10);
+    display: flex;
+    width: 1000%;
+}
+.animation-frame {
+    display: block;
+    width: 10%;
+    max-width: 10%;
+    flex-basis: 10%;
+    font-size: 300px;
+}
+@keyframes frame-animation {
+    100%{
+        transform: translateX(-100%);
+    }
+}
